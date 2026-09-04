@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trustora Enterprises | Business, Accounting & Compliance Solutions</title>
+
+    <meta name="description"
+          content="Trustora Enterprises provides professional accounting, compliance, audit, MIS and business support solutions for businesses in India.">
+
+    <meta name="keywords"
+          content="Trustora Enterprises, accounting services, GST compliance, internal audit, business compliance, MIS, bookkeeping">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #172033;
+            background: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* HEADER */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.97);
+            border-bottom: 1px solid #e8ebf0;
+        }
+
+        .navbar {
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #102a56;
+        }
+
+        .logo span {
+            display: block;
+            font-size: 10px;
+            letter-spacing: 4px;
+            color: #b28a3c;
+            margin-top: -5px;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        nav a {
+            font-size: 15px;
+            font-weight: 600;
+            color: #26364d;
+        }
+
+        nav a:hover {
+            color: #b28a3c;
+        }
+
+        .nav-btn {
+            background: #102a56;
+            color: white !important;
+            padding: 11px 20px;
+            border-radius: 6px;
+        }
+
+        /* HERO */
+
+        .hero {
+            background:
+                linear-gradient(120deg, #eef3f9 0%, #ffffff 55%, #f7f1e7 100%);
+            padding: 100px 0;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 5vw, 64px);
+            line-height: 1.08;
+            color: #102a56;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #b28a3c;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #526176;
+            max-width: 650px;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 25px;
+            border-radius: 6px;
+            font-weight: 700;
+            border: 1px solid #102a56;
+        }
+
+        .btn-primary {
+            background: #102a56;
+            color: white;
+        }
+
+        .btn-secondary {
+            color: #102a56;
+            background: white;
+        }
+
+        .hero-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 45px rgba(20,40,70,0.12);
+            border: 1px solid #e6e9ee;
+        }
+
+        .hero-card h3 {
+            color: #102a56;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .hero-card p {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .check {
+            margin: 12px 0;
+            font-weight: 600;
+        }
+
+        .check::before {
+            content: "✓";
+            color: #b28a3c;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* GENERAL */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 50px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            color: #102a56;
+            margin-bottom: 12px;
+        }
+
+        .section-title p {
+            color: #667085;
+        }
+
+        /* SERVICES */
+
+        .services {
+            background: #fafbfc;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #e7eaf0;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(20,40,70,0.10);
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            background: #eef3f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            color: #102a56;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .service-card p {
+            color: #667085;
+            font-size: 15px;
+        }
+
+        /* ABOUT */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about h2 {
+            font-size: 40px;
+            color: #102a56;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            color: #596579;
+            margin-bottom: 18px;
+        }
+
+        .values {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .value {
+            padding: 18px;
+            background: #f7f8fa;
+            border-left: 3px solid #b28a3c;
+            font-weight: 700;
+        }
+
+        /* WHY US */
+
+        .why {
+            background: #102a56;
+            color: white;
+        }
+
+        .why .section-title h2 {
+            color: white;
+        }
+
+        .why .section-title p {
+            color: #d5dce8;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+        }
+
+        .why-card {
+            padding: 30px;
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 12px;
+        }
+
+        .why-card h3 {
+            margin-bottom: 10px;
+            color: #e3c98f;
+        }
+
+        .why-card p {
+            color: #d5dce8;
+            font-size: 15px;
+        }
+
+        /* PROCESS */
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+
+        .process {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .number {
+            width: 55px;
+            height: 55px;
+            margin: auto auto 18px;
+            border-radius: 50%;
+            background: #102a56;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800;
+        }
+
+        .process h3 {
+            color: #102a56;
+            margin-bottom: 8px;
+        }
+
+        .process p {
+            color: #667085;
+            font-size: 14px;
+        }
+
+        /* CTA */
+
+        .cta {
+            background: #f7f1e7;
+            text-align: center;
+        }
+
+        .cta h2 {
+            color: #102a56;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            color: #596579;
+            margin-bottom: 25px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #0c1d39;
+            color: white;
+            padding: 60px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 50px;
+        }
+
+        footer h3 {
+            margin-bottom: 15px;
+        }
+
+        footer p,
+        footer a {
+            color: #bfc8d8;
+            font-size: 14px;
+        }
+
+        footer a {
+            display: block;
+            margin: 8px 0;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 40px;
+            padding-top: 20px;
+            color: #9eabc0;
+            font-size: 13px;
+        }
+
+        /* WHATSAPP */
+
+        .whatsapp {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: #25D366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            z-index: 2000;
+        }
+
+        /* MOBILE */
+
+        @media(max-width: 850px) {
+
+            nav {
+                display: none;
+            }
+
+            .hero-grid,
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-grid,
+            .why-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media(max-width: 600px) {
+
+            .hero {
+                padding: 70px 0;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .service-grid,
+            .why-grid,
+            .process-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .section-title h2,
+            .about h2,
+            .cta h2 {
+                font-size: 32px;
+            }
+
+            .hero-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+
+        <a href="#" class="logo">
+            TRUSTORA
+            <span>ENTERPRISES</span>
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#why">Why Trustora</a>
+            <a href="#contact" class="nav-btn">Get in Touch</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div>
+
+            <h1>
+                Business Solutions Built on
+                <span>Trust, Accuracy & Compliance.</span>
+            </h1>
+
+            <p>
+                TRUSTORA ENTERPRISES helps businesses simplify accounting,
+                compliance, audit and operational requirements through
+                practical and reliable professional services.
+            </p>
+
+            <div class="buttons">
+                <a href="#services" class="btn btn-primary">
+                    Explore Our Services
+                </a>
+
+                <a href="#contact" class="btn btn-secondary">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <h3>Professional Business Support</h3>
+
+            <p>
+                Practical solutions designed to help businesses maintain
+                better financial control, compliance and operational
+                visibility.
+            </p>
+
+            <div class="check">Accounting & Bookkeeping</div>
+            <div class="check">GST & Compliance Support</div>
+            <div class="check">Internal & Process Audit</div>
+            <div class="check">MIS & Financial Reporting</div>
+            <div class="check">Business Support Solutions</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Our Services</h2>
+
+            <p>
+                Professional support solutions designed around the
+                practical requirements of modern businesses.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+            <div class="service-card">
+
+                <div class="icon">📊</div>
+
+                <h3>Accounting & Bookkeeping</h3>
+
+                <p>
+                    Day-to-day bookkeeping, ledger management,
+                    reconciliation and financial record support.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="icon">📋</div>
+
+                <h3>GST & Tax Compliance</h3>
+
+                <p>
+                    GST-related compliance support, reconciliations,
+                    documentation and reporting assistance.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="icon">🔍</div>
+
+                <h3>Internal & Process Audit</h3>
+
+                <p>
+                    Process review, control testing, risk identification,
+                    compliance checks and improvement recommendations.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="icon">📈</div>
+
+                <h3>Financial Reporting & MIS</h3>
+
+                <p>
+                    Management reports, financial analysis, MIS reporting
+                    and decision-support information.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="icon">✅</div>
+
+                <h3>Business Compliance</h3>
+
+                <p>
+                    Support with documentation, compliance processes
+                    and business-related requirements.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="icon">💼</div>
+
+                <h3>Management Consulting</h3>
+
+                <p>
+                    Practical support to improve business processes,
+                    controls and operational efficiency.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+    <div class="container about-grid">
+
+        <div>
+
+            <h2>About Trustora Enterprises</h2>
+
+            <p>
+                TRUSTORA ENTERPRISES is focused on providing practical
+                business support solutions that help organizations
+                manage financial records, compliance requirements,
+                controls and operational processes more effectively.
+            </p>
+
+            <p>
+                Our approach is simple: understand the requirement,
+                identify the gaps, provide practical solutions and
+                support implementation.
+            </p>
+
+            <div class="values">
+
+                <div class="value">Trust</div>
+                <div class="value">Integrity</div>
+                <div class="value">Accuracy</div>
+                <div class="value">Transparency</div>
+                <div class="value">Professionalism</div>
+                <div class="value">Confidentiality</div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <h3>Our Approach</h3>
+
+            <p>
+                We focus on practical, structured and understandable
+                solutions rather than unnecessary complexity.
+            </p>
+
+            <div class="check">Understand the requirement</div>
+            <div class="check">Analyse risks and gaps</div>
+            <div class="check">Develop practical solutions</div>
+            <div class="check">Support implementation</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHY TRUSTORA -->
+
+<section class="why" id="why">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Why Choose Trustora?</h2>
+
+            <p>
+                A professional approach focused on accuracy,
+                clarity and practical business requirements.
+            </p>
+
+        </div>
+
+
+        <div class="why-grid">
+
+            <div class="why-card">
+
+                <h3>Professional Approach</h3>
+
+                <p>
+                    Structured and practical solutions for business
+                    requirements.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>Accuracy</h3>
+
+                <p>
+                    Focus on reliable records, documentation and
+                    reporting.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>Compliance Focus</h3>
+
+                <p>
+                    Helping businesses maintain stronger compliance
+                    processes.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>Confidentiality</h3>
+
+                <p>
+                    Business and financial information handled with
+                    professional care.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>Practical Solutions</h3>
+
+                <p>
+                    Recommendations designed to be realistic and
+                    easier to implement.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>Long-Term Support</h3>
+
+                <p>
+                    Focus on building dependable professional
+                    relationships.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>How We Work</h2>
+
+            <p>
+                A simple four-step approach to understanding and
+                solving business requirements.
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+            <div class="process">
+
+                <div class="number">01</div>
+
+                <h3>Understand</h3>
+
+                <p>
+                    Understand the requirement and current situation.
+                </p>
+
+            </div>
+
+
+            <div class="process">
+
+                <div class="number">02</div>
+
+                <h3>Analyse</h3>
+
+                <p>
+                    Identify gaps, risks and opportunities.
+                </p>
+
+            </div>
+
+
+            <div class="process">
+
+                <div class="number">03</div>
+
+                <h3>Implement</h3>
+
+                <p>
+                    Provide practical solutions and implementation
+                    support.
+                </p>
+
+            </div>
+
+
+            <div class="process">
+
+                <div class="number">04</div>
+
+                <h3>Support</h3>
+
+                <p>
+                    Provide ongoing professional assistance where
+                    required.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta" id="contact">
+
+    <div class="container">
+
+        <h2>Let's Discuss Your Business Requirement</h2>
+
+        <p>
+            Have a business, accounting, compliance or audit requirement?
+            Get in touch with Trustora Enterprises.
+        </p>
+
+        <div class="buttons" style="justify-content:center;">
+
+            <a href="mailto:YOUR_EMAIL@example.com"
+               class="btn btn-primary">
+                Email Us
+            </a>
+
+            <a href="https://wa.me/YOURNUMBER"
+               class="btn btn-secondary">
+                WhatsApp Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3>TRUSTORA ENTERPRISES</h3>
+
+            <p>
+                Business solutions built on trust, accuracy
+                and compliance.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#why">Why Trustora</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Services</h3>
+
+            <a href="#services">Accounting & Bookkeeping</a>
+            <a href="#services">GST & Compliance</a>
+            <a href="#services">Internal Audit</a>
+            <a href="#services">MIS & Reporting</a>
+            <a href="#services">Business Support</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="container copyright">
+
+        © 2026 TRUSTORA ENTERPRISES. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<a class="whatsapp"
+   href="https://wa.me/YOURNUMBER"
+   target="_blank"
+   aria-label="Contact Trustora on WhatsApp">
+    ☎
+</a>
+
+</body>
+</html>
